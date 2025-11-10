@@ -4,7 +4,7 @@ export const productsDatabase = {
   smartphones: [
     {
       id: 1,
-      name: "Astro Blaze X",
+      name: "Note 13 Pro ",
       bannerImage: "/note13Pro-collection-banner.webp",
       
       carouselImages: [
@@ -25,7 +25,7 @@ export const productsDatabase = {
       
       phoneType: {
         heading: "Flagship Performance",
-        description: "The Astro Blaze X represents a new era in African smartphone technology with powerful features designed for professionals and content creators.",
+        description: "16GB RAM + 256GB ROM | 50MP Rear Camera | 90Hz Refresh Rate | UNISOC T606 CPU Mode",
         typeImage: "/note13-a-4.webp"
       },
       

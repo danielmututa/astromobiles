@@ -16,9 +16,9 @@ export function Navigation() {
            
 
              <img
-                src="/astro-no-tag.png"
+                src="astro.png"
                 alt="logo"
-                className=" h-[30px] object-cover rounded-2xl shadow-2xl"
+                className=" h-[40px] object-cover rounded-2xl shadow-2xl"
               />
           </Link>
 

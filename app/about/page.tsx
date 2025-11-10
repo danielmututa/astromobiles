@@ -1,25 +1,63 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Target, Users, Globe, Heart, Award, TrendingUp } from "lucide-react"
+import { useEffect, useRef } from "react"
+import ThreeBackground from "@/components/ThreeBackground"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function AboutPage() {
+  const scrollRef = useRef(null)
+
+  useEffect(() => {
+    // Animate sections on scroll
+    const sections = scrollRef.current?.querySelectorAll('section')
+    sections?.forEach((section) => {
+      gsap.fromTo(
+        section.querySelectorAll('.animate-in'),
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 80%',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      )
+    })
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
+  }, [])
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative" ref={scrollRef}>
+      <ThreeBackground />
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 md:pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-background -z-10" />
+      <section className="relative pt-32 pb-16 md:pb-24 overflow-hidden z-10">
+        <div className="absolute inset-0 -z-10" style={{ background: 'linear-gradient(to bottom right, rgba(143, 194, 64, 0.05), rgba(143, 194, 64, 0.05), transparent)' }} />
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <Badge className="w-fit mx-auto">About AstroMobile</Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+            <Badge className="w-fit mx-auto animate-in" style={{ backgroundColor: '#8FC240' }}>About AstroMobile</Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance animate-in">
               Connecting Africa Through{" "}
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Innovation</span>
+              <span className="bg-clip-text text-transparent" style={{ background: 'linear-gradient(to right, #8FC240, #7AB030)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Innovation</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty">
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty animate-in">
               We're on a mission to make smartphones accessible to everyone across Africa through affordable devices and
               flexible payment solutions.
             </p>
@@ -28,13 +66,13 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 relative z-10">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-            <Card className="border-2 border-primary/20">
+            <Card className="border-2 animate-in" style={{ borderColor: '#8FC240' + '33' }}>
               <CardContent className="p-8 space-y-4">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <Target className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#8FC240' + '1A' }}>
+                  <Target className="w-7 h-7" style={{ color: '#8FC240' }} />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold">Our Mission</h2>
                 <p className="text-muted-foreground leading-relaxed">
@@ -43,7 +81,7 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-2 border-accent/20">
+            <Card className="border-2 animate-in" style={{ borderColor: '#8FC240' + '33' }}>
               <CardContent className="p-8 space-y-4">
                 <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center">
                   <Globe className="w-7 h-7 text-accent" />
@@ -60,10 +98,10 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-16 md:py-24 bg-muted/30 relative z-10">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <div className="space-y-6 animate-in">
               <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
@@ -85,8 +123,8 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-3xl -z-10" />
+            <div className="relative animate-in">
+              <div className="absolute inset-0 rounded-3xl blur-3xl -z-10" style={{ background: 'linear-gradient(to bottom right, rgba(143, 194, 64, 0.2), rgba(122, 176, 48, 0.2))' }} />
               <img src="/african-team-working-together-on-technology.jpg" alt="Our Team" className="w-full h-auto rounded-2xl shadow-2xl" />
             </div>
           </div>
@@ -94,19 +132,19 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 relative z-10">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Values</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-in">Our Values</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-in">
               The principles that guide everything we do
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:shadow-xl transition-all animate-in" style={{ borderColor: '#8FC240' + '33' }}>
               <CardContent className="pt-6 space-y-4 text-center">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto">
-                  <Heart className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto" style={{ backgroundColor: '#8FC240' + '1A' }}>
+                  <Heart className="w-6 h-6" style={{ color: '#8FC240' }} />
                 </div>
                 <h3 className="font-semibold text-lg">Accessibility</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -114,7 +152,7 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:shadow-xl transition-all animate-in" style={{ borderColor: '#8FC240' + '33' }}>
               <CardContent className="pt-6 space-y-4 text-center">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mx-auto">
                   <Award className="w-6 h-6 text-accent" />
@@ -125,10 +163,10 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:shadow-xl transition-all animate-in" style={{ borderColor: '#8FC240' + '33' }}>
               <CardContent className="pt-6 space-y-4 text-center">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto">
-                  <TrendingUp className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto" style={{ backgroundColor: '#8FC240' + '1A' }}>
+                  <TrendingUp className="w-6 h-6" style={{ color: '#8FC240' }} />
                 </div>
                 <h3 className="font-semibold text-lg">Innovation</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -136,7 +174,7 @@ export default function AboutPage() {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-2 hover:border-primary transition-colors">
+            <Card className="border-2 hover:shadow-xl transition-all animate-in" style={{ borderColor: '#8FC240' + '33' }}>
               <CardContent className="pt-6 space-y-4 text-center">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mx-auto">
                   <Users className="w-6 h-6 text-accent" />
@@ -152,28 +190,28 @@ export default function AboutPage() {
       </section>
 
       {/* Impact Stats */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-primary to-accent text-primary-foreground">
+      <section className="py-16 md:py-24 text-primary-foreground relative z-10" style={{ background: 'linear-gradient(to bottom right, #8FC240, #7AB030)' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Impact</h2>
-            <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-in">Our Impact</h2>
+            <p className="text-lg text-primary-foreground/90 max-w-2xl mx-auto animate-in">
               Making a difference across Africa, one smartphone at a time
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-2 animate-in">
               <div className="text-4xl md:text-5xl font-bold">500K+</div>
               <div className="text-primary-foreground/80">Devices Sold</div>
             </div>
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-2 animate-in">
               <div className="text-4xl md:text-5xl font-bold">12</div>
               <div className="text-primary-foreground/80">Countries</div>
             </div>
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-2 animate-in">
               <div className="text-4xl md:text-5xl font-bold">50+</div>
               <div className="text-primary-foreground/80">MNO Partners</div>
             </div>
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-2 animate-in">
               <div className="text-4xl md:text-5xl font-bold">98%</div>
               <div className="text-primary-foreground/80">Satisfaction Rate</div>
             </div>
@@ -185,3 +223,9 @@ export default function AboutPage() {
     </div>
   )
 }
+
+
+
+
+
+
