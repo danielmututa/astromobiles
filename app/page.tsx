@@ -59,7 +59,8 @@ export default function HomePage() {
     { img: "Frame_12-removebg-preview.png", country: "Zimbabwe" },
     { img: "Frame_7-removebg-preview.png", country: "Malawi"  },
     { img: "Frame_15-removebg-preview.png", country: "Multiple Countries"  },
-    { img: "Frame_12-removebg-preview.png", country: "Multiple Countries" }
+    { img: "Frame_16-removebg-preview.png", country: "Multiple Countries" },
+    { img: "Frame_13-removebg-preview.png", country: "Multiple Countries" }
   ]
 
   const testimonials = [
@@ -486,7 +487,7 @@ export default function HomePage() {
       </section>
 
       {/* PAYU Section */}
-      <section ref={payuRef} className="py-16 md:py-24 text-primary-foreground relative z-10" style={{ background: 'linear-gradient(to bottom right, #8FC240, #7AB030)' }}>
+      <section ref={payuRef} className="pt-16   md:py-24 text-primary-foreground relative z-10" style={{ background: 'linear-gradient(to bottom right, #8FC240, #7AB030)' }}>
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 payu-content">
@@ -536,13 +537,13 @@ No debt. No pressure. Just top up through M-Pesa and stay connected.
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </div>
-            <div className="relative payu-image">
+           
               <img
-                src="/person-using-smartphone-for-mobile-payment-in-afri.jpg"
+                src="/phone screen set.png"
                 alt="PAYU Model"
-                className="w-full h-auto rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow"
+                className="w-full h-[650px] object-contain relative bottom-[-28px] md:bottom-[-96px] "
               />
-            </div>
+           
           </div>
         </div>
       </section>
