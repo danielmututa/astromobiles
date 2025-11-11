@@ -52,14 +52,14 @@ export default function HomePage() {
   ]
 
   const partners = [
-    { img: "Amazon_Web_Services_Logo.svg.png", country: "Multiple Countries" },
-    { img: "285199f4046e1c49ac29f14a1cb4c2a76cd1b.png", country: "Zimbabwe" },
-    { img: "zm-atel-logo.png", country: "Multiple Countries"  },
-    { img: "digicel.png", country: "Kenya"  },
-    { img: "Google_2015_logo.svg.webp", country: "Zimbabwe" },
-    { img: "MTN-Logo.png", country: "Malawi"  },
-    { img: "vodacom_africa_business_communities.png", country: "Multiple Countries"  },
-    { img: "Zamtel.png", country: "Multiple Countries" }
+    { img: "Frame_8-removebg-preview (1).png", country: "Multiple Countries" },
+    { img: "Frame_9-removebg-preview.png", country: "Zimbabwe" },
+    { img: "Frame_10-removebg-preview copy.png", country: "Multiple Countries"  },
+    { img: "Frame_11-removebg-preview.png", country: "Kenya"  },
+    { img: "Frame_12-removebg-preview.png", country: "Zimbabwe" },
+    { img: "Frame_7-removebg-preview.png", country: "Malawi"  },
+    { img: "Frame_15-removebg-preview.png", country: "Multiple Countries"  },
+    { img: "Frame_12-removebg-preview.png", country: "Multiple Countries" }
   ]
 
   const testimonials = [
@@ -248,113 +248,137 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section with 3D parallax */}
-      <section ref={heroRef} className="relative h-screen overflow-hidden pt-16 md:pt-20">
-        <div className="relative h-full">
-          {heroSlides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                index === currentSlide ? "opacity-100" : "opacity-0 pointer-events-none"
-              }`}
-            >
-              <div className="absolute inset-0">
-                <img 
-                  src={slide.image || "/placeholder.svg"} 
-                  alt={slide.title} 
-                  className="w-full h-full object-cover scale-110 animate-slow-zoom" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+  <section ref={heroRef} className="relative h-[500px] lg:h-screen overflow-hidden pt-12 lg:pt-16 md:pt-20">
+  <div className="relative h-full lg:h-full">
+    {heroSlides.map((slide, index) => (
+      <div
+        key={index}
+        className={`absolute inset-0 transition-opacity duration-1000 ${
+          index === currentSlide ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="absolute inset-0">
+          <img 
+            src={slide.image || "/placeholder.svg"} 
+            alt={slide.title} 
+            className={`w-full h-full object-cover ${
+              index === currentSlide ? "scale-110 animate-slow-zoom" : "scale-100"
+            }`}
+            loading={index === 0 ? "eager" : "lazy"}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent" />
+        </div>
+
+        <div className="relative h-full flex items-center">
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="max-w-3xl md:space-y-1 hero-content">
+              <Badge className="w-fit animate-fade-in-up" style={{ backgroundColor: '#8FC240' }}>
+                {slide.type}
+              </Badge>
+
+              <div className="space-y-1">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance text-white">
+                  {slide.title}
+                </h1>
+                <p className="text-xl sm:text-2xl md:text-3xl pt-3 pb-1 font-semibold leading-tight text-balance" style={{ color: '#8FC240' }}>
+                  {slide.subtitle}
+                </p>
+                <p className="text-sm sm:text-base md:text-lg text-arial text-white/90 leading-relaxed text-pretty max-w-2xl">
+                  {slide.description}
+                </p>
               </div>
 
-              <div className="relative h-full flex items-center">
-                <div className="container mx-auto px-4 lg:px-8">
-                  <div className="max-w-3xl md:space-y-1 hero-content">
-                    <Badge className="w-fit animate-fade-in-up " style={{ backgroundColor: '#8FC240' }}>{slide.type}</Badge>
+              <div className="flex sm:flex-row gap-4 pt-4">
+                <Link href="/products">
+                  <Button size="lg" className="text-sm sm:text-base px-8 sm:px-20 py-5 hover:scale-105 rounded-full transition-transform" style={{ backgroundColor: '#8FC240' }}>
+                    Find a Dealer
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link href="/payu">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="text-sm sm:text-base px-4 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border-[#8FC240] hover:bg-white/20 hover:scale-105 transition-transform"
+                  >
+                    Learn About PAYU
+                  </Button>
+                </Link>
+              </div>
 
-                    <div className="space-y-1">
-                      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance text-white">
-                        {slide.title}
-                      </h1>
-                      <p className="text-2xl pt-3 pb-1 md:text-3xl font-semibold leading-tight text-balance" style={{ color: '#8FC240' }}>
-                        {slide.subtitle}
-                      </p>
-                      <p className="text-lg text-arial md:text-[16px] text-white/90 leading-relaxed text-pretty max-w-2xl">
-                        {slide.description}
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                      <Link href="/products">
-                        <Button size="lg" className="text-[14px] px-20 py-5 hover:scale-105 rounded-full transition-transform" style={{ backgroundColor: '#8FC240' }}>
-                        Find a Dealer
-                          <ArrowRight className="ml-2 w-5 h-5" />
-                        </Button>
-                      </Link>
-                      <Link href="/payu">
-                        <Button
-                          size="lg"
-                          variant="outline"
-                          className="text-[14px] px-4 py-1 rounded-full  bg-white/10 backdrop-blur-sm text-white border-[#8FC240] hover:bg-white/20 hover:scale-105 transition-transform"
-                        >
-                          Learn About PAYU
-                        </Button>
-                      </Link>
-                    </div>
-
-                    <div className="flex items-center gap-6 pt-4">
-                      <div className="stat-item">
-                        <div className="text-xl md:text-2xl font-bold text-white">500K+</div>
-                        <div className="text-xs text-white/60">Devices sold</div>
-                      </div>
-                      <div className="w-px h-8 bg-white/20" />
-                      <div className="stat-item">
-                        <div className="text-xl md:text-2xl font-bold text-white">12+</div>
-                        <div className="text-xs text-white/60">Countries</div>
-                      </div>
-                      <div className="w-px h-8 bg-white/20" />
-                      <div className="stat-item">
-                        <div className="text-xl md:text-2xl font-bold text-white">4.8★</div>
-                        <div className="text-xs text-white/60">Rating</div>
-                      </div>
-                    </div>
-                  </div>
+              {/* Fixed stats section - responsive and no overflow */}
+              <div className="flex items-center gap-3 sm:gap-6 pt-4 overflow-x-auto scrollbar-hide">
+                <div className="stat-item flex-shrink-0">
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">500K+</div>
+                  <div className="text-[10px] sm:text-xs text-white/60 whitespace-nowrap">Devices sold</div>
+                </div>
+                <div className="w-px h-6 sm:h-8 bg-white/20 flex-shrink-0" />
+                <div className="stat-item flex-shrink-0">
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">12+</div>
+                  <div className="text-[10px] sm:text-xs text-white/60 whitespace-nowrap">Countries</div>
+                </div>
+                <div className="w-px h-6 sm:h-8 bg-white/20 flex-shrink-0" />
+                <div className="stat-item flex-shrink-0">
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">4.8★</div>
+                  <div className="text-[10px] sm:text-xs text-white/60 whitespace-nowrap">Rating</div>
                 </div>
               </div>
             </div>
-          ))}
-
-          <div className="absolute bottom-12 right-[1px] mb-5 -translate-x-1/2 flex items-center gap-6 z-20">
-            <button
-              onClick={prevSlide}
-              className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg text-white"
-              aria-label="Previous slide"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-
-            <div className="flex gap-3">
-              {heroSlides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`h-3 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? "bg-white w-12" : "bg-white/30 w-3 hover:bg-white/50"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            <button
-              onClick={nextSlide}
-              className="w-14 h-14 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg text-white"
-              aria-label="Next slide"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
           </div>
         </div>
-      </section>
+      </div>
+    ))}
+
+    {/* Bottom Navigation controls - FOR LG and XL */}
+    <div className="hidden lg:flex absolute bottom-8 sm:bottom-12 mb-3 right-1 -translate-x-1/2 items-center gap-3 sm:gap-6 z-20 px-4">
+      <button
+        onClick={prevSlide}
+        className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg text-white"
+        aria-label="Previous slide"
+      >
+        <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+      </button>
+
+      <div className="flex gap-2 sm:gap-3">
+        {heroSlides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`h-2 sm:h-3 rounded-full transition-all duration-300 ${
+              index === currentSlide ? "bg-white w-8 sm:w-12" : "bg-white/30 w-2 sm:w-3 hover:bg-white/50"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      <button
+        onClick={nextSlide}
+        className="w-10 h-10 sm:w-14 sm:h-14 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center hover:bg-white/30 hover:scale-110 transition-all duration-300 shadow-lg text-white"
+        aria-label="Next slide"
+      >
+        <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+      </button>
+    </div>
+
+    {/* Side Arrows - ONLY FOR SM and MD */}
+    <button
+      onClick={prevSlide}
+      className="lg:hidden absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20  border-2 border-white/30 flex items-center justify-center hover:bg-white/30 transition-all duration-300 shadow-lg text-white z-20"
+      aria-label="Previous slide"
+    >
+      <ChevronLeft className="w-5 h-5" />
+    </button>
+
+    <button
+      onClick={nextSlide}
+      className="lg:hidden absolute right-1 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/20  border-2 border-white/30 flex items-center justify-center hover:bg-white/30 transition-all duration-300 shadow-lg text-white z-20"
+      aria-label="Next slide"
+    >
+      <ChevronRight className="w-5 h-5" />
+    </button>
+  </div>
+</section>
 
       {/* Features Section */}
       <section ref={featuresRef} className="py-16 md:py-24 bg-muted/30 relative z-10">
@@ -446,14 +470,7 @@ export default function HomePage() {
                 <CardContent className="p-4">
                   <div>
                     <h3 className="font-semibold text-xl mb-1">{product.name}</h3>
-                    <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                      <Star className="w-4 h-4 fill-muted text-muted" style={{ fill: '#8FC240', color: '#8FC240' }} />
-                      <Star className="w-4 h-4 fill-muted text-muted" style={{ fill: '#8FC240', color: '#8FC240' }} />
-                      <Star className="w-4 h-4 fill-muted text-muted" style={{ fill: '#8FC240', color: '#8FC240' }} />
-                      <Star className="w-4 h-4 fill-muted text-muted" style={{ fill: '#8FC240', color: '#8FC240' }} />
-                      <Star className="w-4 h-4 fill-muted text-muted" />
-                      <span className="ml-1">(4.0)</span>
-                    </div>
+                   
                   </div>
                   <div className="flex items-center justify-between">
                     <div>
@@ -613,7 +630,7 @@ No debt. No pressure. Just top up through M-Pesa and stay connected.
       </section>
 
       {/* CTA Section */}
-      <section className=" flex items-center justify-center  h-[450px] z-10  relative">
+      <section className=" flex items-center justify-center  h-[580px] lg:h-[450px]   z-10  relative">
 
  <img  src="/last-sectionbanner.jpg" 
             className="w-full  object-cover h-full  relative"

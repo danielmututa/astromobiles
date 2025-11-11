@@ -13,33 +13,21 @@ gsap.registerPlugin(ScrollTrigger)
 export default function ProductsPage() {
   const countriesRef = useRef(null)
 
-  const countries = [
-    { name: 'United States', flag: '🇺🇸', code: 'US' },
-    { name: 'United Kingdom', flag: '🇬🇧', code: 'GB' },
-    { name: 'Germany', flag: '🇩🇪', code: 'DE' },
-    { name: 'France', flag: '🇫🇷', code: 'FR' },
-    { name: 'Canada', flag: '🇨🇦', code: 'CA' },
-    { name: 'Australia', flag: '🇦🇺', code: 'AU' },
-    { name: 'Japan', flag: '🇯🇵', code: 'JP' },
-    { name: 'Italy', flag: '🇮🇹', code: 'IT' },
-    { name: 'Spain', flag: '🇪🇸', code: 'ES' },
-    { name: 'Netherlands', flag: '🇳🇱', code: 'NL' },
-    { name: 'Brazil', flag: '🇧🇷', code: 'BR' },
-    { name: 'Mexico', flag: '🇲🇽', code: 'MX' },
-    { name: 'South Korea', flag: '🇰🇷', code: 'KR' },
-    { name: 'China', flag: '🇨🇳', code: 'CN' },
-    { name: 'India', flag: '🇮🇳', code: 'IN' },
-    { name: 'Sweden', flag: '🇸🇪', code: 'SE' },
-    { name: 'Norway', flag: '🇳🇴', code: 'NO' },
-    { name: 'Denmark', flag: '🇩🇰', code: 'DK' },
-    { name: 'Belgium', flag: '🇧🇪', code: 'BE' },
-    { name: 'Switzerland', flag: '🇨🇭', code: 'CH' },
-    { name: 'Austria', flag: '🇦🇹', code: 'AT' },
-    { name: 'Poland', flag: '🇵🇱', code: 'PL' },
-    { name: 'Portugal', flag: '🇵🇹', code: 'PT' },
-    { name: 'Ireland', flag: '🇮🇪', code: 'IE' },
-    { name: 'New Zealand', flag: '🇳🇿', code: 'NZ' },
-  ];
+ const countries = [
+    { name: 'Angola', flag: '🇦🇴', code: 'AO' },
+    { name: 'Botswana', flag: '🇧🇼', code: 'BW' },
+    { name: 'DRC Congo', flag: '🇨🇩', code: 'CD' },
+    { name: 'Eswatini', flag: '🇸🇿', code: 'SZ' },
+    { name: 'Lesotho', flag: '🇱🇸', code: 'LS' },
+    { name: 'Malawi', flag: '🇲🇼', code: 'MW' },
+    { name: 'Mozambique', flag: '🇲🇿', code: 'MZ' },
+    { name: 'Namibia', flag: '🇳🇦', code: 'NA' },
+    { name: 'South Africa', flag: '🇿🇦', code: 'ZA' },
+    { name: 'Tanzania', flag: '🇹🇿', code: 'TZ' },
+    { name: 'Zambia', flag: '🇿🇲', code: 'ZM' },
+    { name: 'Zimbabwe', flag: '🇿🇼', code: 'ZW' },
+];
+
 
   useEffect(() => {
     // Locomotive-style animation for cards
@@ -77,10 +65,10 @@ export default function ProductsPage() {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/dealer-background.jpg"
+            src="/about-us-one.png"
             alt="Background"
             fill
-            className="object-cover opacity-20"
+            className="object-cover "
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-white/60" />

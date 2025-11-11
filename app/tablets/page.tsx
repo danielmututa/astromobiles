@@ -148,7 +148,7 @@ export default function TabletsPage() {
 
 
    <div className="flex justify-between">
-               <div className="flex  cursor-pointer gap-2 items-center">
+               {/* <div className="flex  cursor-pointer gap-2 items-center">
                
                <div className="flex   items-center">
                
@@ -164,7 +164,7 @@ export default function TabletsPage() {
                </div>
                <p className="text-lg text-[#8FC240] ">${tablet.price}</p>
                
-               </div>
+               </div> */}
 
  
         

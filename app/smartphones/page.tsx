@@ -197,7 +197,7 @@ export default function SmartphonesPage() {
 
 
                    <div className="flex justify-between  ">
-                                 <div className="flex flex-col cursor-pointer  gap-2 justify-center items-start">
+                                 {/* <div className="flex flex-col cursor-pointer  gap-2 justify-center items-start">
                                  
                                  <div className="flex border-[#8FC240] rounded border p-2   items-center">
                                  
@@ -214,7 +214,7 @@ export default function SmartphonesPage() {
                                 
                                  
                    <p className="   text-[14px] text-muted-foreground    text-lg text-[#8FC240] ">{phone.title}</p>
-                                 </div>
+                                 </div> */}
                                  
                    
                           
