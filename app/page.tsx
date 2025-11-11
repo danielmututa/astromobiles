@@ -523,7 +523,9 @@ No debt. No pressure. Just top up through M-Pesa and stay connected.
                   </div>
                 </div>
                 <div className="flex items-start gap-3 hover:translate-x-2 transition-transform">
-                  <div className="w-8 h-8 rounded-full  flex items-center justify-center flex-shrink-0 mt-0.5">
+                 
+
+                  <div className="w-8 h-8 rounded-full bg-primary-foreground/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="font-bold">3</span>
                   </div>
                   <div>
@@ -532,11 +534,14 @@ No debt. No pressure. Just top up through M-Pesa and stay connected.
                   </div>
                 </div>
               </div>
-              <Button  className="mt-4 border bg-white text-[#8FC240] rounded-full font-sm border-white  transition-transform">
-                Learn More About PAYU
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </div>
+           <Button
+  className="mt-4 border bg-white text-[#8FC240] rounded-full font-sm border-white transition-transform duration-200 hover:scale-115 hover:bg-white hover:text-[#8FC240] focus:outline-none active:outline-none"
+>
+  Learn More About PAYU
+  <ArrowRight className="ml-2 w-5 h-5" />
+</Button>
+
+            </div>    
            
               <img
                 src="/phone screen set.png"
@@ -655,9 +660,13 @@ No debt. No pressure. Just top up through M-Pesa and stay connected.
                   </Button>
                 </Link>
                 <Link href="/partner">
-                  <Button  variant="outline" className="hover:scale-105 text-sm rounded-full border border-[#8FC240] transition-transform">
-                    Become a Partner
-                  </Button>
+                 <Button
+  variant="outline"
+  className="text-sm rounded-full border border-[#8FC240] text-black/75 bg-transparent transition-transform duration-200 transform hover:scale-105 hover:bg-[#8FC240] hover:text-white focus:outline-none active:outline-none"
+>
+  Become a Partner
+</Button>
+
                 </Link>
               </div>
             </CardContent>
