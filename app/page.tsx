@@ -310,7 +310,7 @@ export default function HomePage() {
               {/* Fixed stats section - responsive and no overflow */}
               <div className="flex items-center gap-3 sm:gap-6 pt-4 overflow-x-auto scrollbar-hide">
                 <div className="stat-item flex-shrink-0">
-                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">500K+</div>
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold text-white">5M+</div>
                   <div className="text-[10px] sm:text-xs text-white/60 whitespace-nowrap">Devices sold</div>
                 </div>
                 <div className="w-px h-6 sm:h-8 bg-white/20 flex-shrink-0" />
