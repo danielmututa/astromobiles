@@ -37,10 +37,24 @@ export default function AboutPage() {
       )
     })
 
+    const partner = [
+      {img:"awards_.jpg", headline:"Award-Winning Foundation:", des:"Astro Mobile has garnered major regional and Zimbabwean awards for its contributions to the technology sector."},
+      {img:"dr.jpg", headline:"Visionary Leadership:", des:"Our founder, Munyaradzi Gwatidzo, has been consistently recognized as one of Africa's top leaders, having been listed on Choiseul Africa more than 4 times, recognized by CNN as a young innovator to watch, and receiving over 20 innovation and business awards."},
+      {img:"investing.jpg", headline:"Investing:", des:"You are investing in a proven, resilient team with a decade of market-entry and scaling expertise, now deploying a highly scalable, asset-light FinTech model to capture Africa's \$10+ billion BNPL opportunity."},
+      {img:"partnership.jpg", headline:"Partners & Employees:", des:"You are joining a purpose-driven company that transforms challenging origins into continental-scale solutions. You will be part of a high-impact culture that is truly empowering financial inclusion for everyone in Africa."},
+    ]
+
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill())
     }
   }, [])
+
+  const partner = [
+    {img:"awards_.jpg", headline:"Award-Winning Foundation:", des:"Astro Mobile has garnered major regional and Zimbabwean awards for its contributions to the technology sector."},
+    {img:"dr.jpg", headline:"Visionary Leadership:", des:"Our founder, Munyaradzi Gwatidzo, has been consistently recognized as one of Africa's top leaders, having been listed on Choiseul Africa more than 4 times, recognized by CNN as a young innovator to watch, and receiving over 20 innovation and business awards."},
+    {img:"investing.jpg", headline:"Investing:", des:"You are investing in a proven, resilient team with a decade of market-entry and scaling expertise, now deploying a highly scalable, asset-light FinTech model to capture Africa's \$10+ billion BNPL opportunity."},
+    {img:"partnership.jpg", headline:"Partners & Employees:", des:"You are joining a purpose-driven company that transforms challenging origins into continental-scale solutions. You will be part of a high-impact culture that is truly empowering financial inclusion for everyone in Africa."},
+  ]
 
   return (
     <div className="min-h-screen relative" ref={scrollRef}>
@@ -200,7 +214,7 @@ export default function AboutPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-2 animate-in">
-              <div className="text-4xl md:text-5xl font-bold">500K+</div>
+              <div className="text-4xl md:text-5xl font-bold">5M+</div>
               <div className="text-primary-foreground/80">Devices Sold</div>
             </div>
             <div className="text-center space-y-2 animate-in">
@@ -208,7 +222,7 @@ export default function AboutPage() {
               <div className="text-primary-foreground/80">Countries</div>
             </div>
             <div className="text-center space-y-2 animate-in">
-              <div className="text-4xl md:text-5xl font-bold">50+</div>
+              <div className="text-4xl md:text-5xl font-bold">5+</div>
               <div className="text-primary-foreground/80">MNO Partners</div>
             </div>
             <div className="text-center space-y-2 animate-in">
@@ -219,10 +233,38 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Why Partner with Algebra */}
+      <section className="py-16 md:py-24 relative z-10">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-in">Why Partner with Algebra? A Legacy of Excellence</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-in">
+              We don't just build technology; we build trust and create impact. Our success is built on a track record recognized across the continent.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {partner.map((item, index) => (
+              <div key={index} className="space-y-4 animate-in">
+                <div className="relative overflow-hidden rounded-2xl">
+                  <img src={item.img} alt={item.headline} className="w-full  object-cover" />
+                </div>
+                <div className="space-y-2 w-full   flex flex-col items-center">
+                  <h3 className="font-semibold text-lg">{item.headline}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-center">
+                    {item.des}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   )
 }
+
 
 
 

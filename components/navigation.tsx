@@ -114,7 +114,7 @@ export function Navigation() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#8FC240] transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
-              href="/companies"
+              href="/about"
               className="nav-link text-sm font-medium hover:text-[#8FC240] transition-all duration-300 relative group"
             >
               Company
