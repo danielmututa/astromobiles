@@ -15,16 +15,15 @@ export const productsDatabase = {
       carouselImages: [
 
         "/Note5 13Pro.webp",
-        "note15-product-7-496369.webp ",
+        "/Note2 15pro.webp",
         "/note15-product-3-544296.webp",
         "/15proo0004.webp"
       ],
-      
       carouselImagestwo: [
-        "/note13-a-4.webp",
-        "/note13-a-13.webp",
-        "/note13-a-14.webp",
-        "/note13-b-4.jpg"
+        "/carosel1.webp",
+        "/carouselpro.jpg",
+        "/carosel3.webp",
+        "/carosel2.webp"
       ],
       
       phoneType: {
@@ -35,7 +34,7 @@ export const productsDatabase = {
       
       carouselImages2: [
         "/Note5 13Pro.webp",
-        "/Note2 13Pro.webp",
+        "/Note2 15pro.webp",
         "/Note3 13Pro.webp",
         "/Note1 13Pro.webp"
       ],
@@ -119,20 +118,23 @@ export const productsDatabase = {
       img: "/logo3.png",
       price: "250",
       title: "From $20us + usage top ups",
-      bannerImage: "/note13Pro-collection-banner.webp",
+      bannerImage: "/note15-banneroo1.webp",
       
       carouselImages: [
-        "/4-02.webp ",
-        "/4-03.webp ",
-        "/4-04.webp",
-        "/4-05.webp"
+       "/astro-vibe1.webp ",
+        "/astro-vibe2.webp",
+        "/astro-vibe3.webp",
+        "/note15-product-2-693153.webp"
       ],
       
+
+
+
       carouselImagestwo: [   
-        "/4-003.jpg",
-        "/4-002.jpg",
-        "/4-001.jpg",
-        "/-004.jpg"
+        "/note15-pic1-1.webp",
+        "/note15-color1.webp",
+        "/note15-color2.webp",
+        "/note15-color3.webp"
       ],
       
       phoneType: {
@@ -149,7 +151,7 @@ export const productsDatabase = {
       ],
       
       featureImage: {
-        image: "/note13-b-4.jpg",
+        image: "/note15-pic2-1.jpg",
         textRight: "Never worry about charging with our revolutionary 6000mAh battery.",
         textBottom: "Perfect for entrepreneurs and busy professionals"
       },
@@ -196,7 +198,7 @@ export const productsDatabase = {
           explanation: "Get up to 3 days of use on a single charge - perfect for areas with unreliable power supply."
         },
         {
-          image: "/note13-a-13.webp",
+          image: "/note15-hotpoint-7.jpg",
           title: "Rapid Charging",
           explanation: "Get a full day's power in just 30 minutes with our fast charging technology."
         },
@@ -217,7 +219,7 @@ export const productsDatabase = {
       img: "/logo3.png",
       price: "180",
       title: "From $20us + usage top ups",
-      bannerImage: "/1_-_BANNNER.jpg",
+      bannerImage: "/note15-banneroo1.webp",
       
       carouselImages: [
 
@@ -234,7 +236,7 @@ export const productsDatabase = {
       
 
         "/2_06.jpg",
-        "/2_04.jpg ",
+        "/2_04.jpg",
         "/2_03.webp",
         "/1_3_05.jpg"
       ],

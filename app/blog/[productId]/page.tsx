@@ -1,6 +1,6 @@
 "use client"
 
-import { Navigation } from "@/components/navigation"
+import {Navigation} from "../../../components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -250,11 +250,11 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
   }
 
   return (
-    <div className="min-h-screen">
+    <div  className="overflow-hidden w-full" >
       <Navigation />
 
       {/* SECTION 1: Hero Banner with Text Overlay at Bottom */}
-      <section ref={heroRef} className="relative h-[70vh] md:h-[80vh] overflow-hidden mt-16">
+      <section ref={heroRef} className="relative h-[30vh] lg:h-[70vh] md:h-[80vh] overflow-hidden mt-16">
         <img
           src={product.bannerImage}
           alt={product.name}
@@ -353,37 +353,45 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
       </section>
 
       {/* SECTION 4: Full Width Carousel (One Image at a Time) */}
-      <section ref={fullCarouselRef} className="relative h-[60vh] md:h-[80vh] overflow-hidden">
+      <section ref={fullCarouselRef} className="relative  h-[25vh] lg:h-[60vh] md:h-[80vh] overflow-hidden">
         <img
           src={product.carouselImagestwo[currentFullCarousel]}
           alt={`${product.name} showcase`}
-          className="w-full h-full object-cover"
+          className="w-full       h-[200px]   lg:h-full  object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />
         <button
           onClick={prevFullSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-3 rounded-full hover:bg-white transition-colors z-10"
+className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/05 backdrop-blur-md p-3 rounded-full hover:bg-white/20 transition-colors z-10"
+
         >
           <ChevronLeft className="w-8 h-8 text-[#8FC240]" />
         </button>
         <button
           onClick={nextFullSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm p-3 rounded-full hover:bg-white transition-colors z-10"
+className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/05 backdrop-blur-md p-3 rounded-full hover:bg-white/20 transition-colors z-10"
+
         >
           <ChevronRight className="w-8 h-8 text-[#8FC240]" />
         </button>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
-          {product.carouselImages.map((_: any, index: number) => (
-            <button
-              key={index}
-              onClick={() => setCurrentFullCarousel(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === currentFullCarousel ? 'w-12' : ''
-              }`}
-              style={{ backgroundColor: index === currentFullCarousel ? '#8FC240' : 'rgba(255,255,255,0.5)' }}
-            />
-          ))}
-        </div>
+       <div className="absolute lg:bottom-8 left-1/2 -translate-x-1/2 flex gap-3 hidden lg:flex">
+  {product.carouselImages.map((_: any, index: number) => (
+    <button
+      key={index}
+      onClick={() => setCurrentFullCarousel(index)}
+      className={`w-3 h-3 rounded-full transition-all ${
+        index === currentFullCarousel ? 'w-12' : ''
+      }`}
+      style={{
+        backgroundColor:
+          index === currentFullCarousel
+            ? '#8FC240'
+            : 'rgba(255,255,255,0.5)',
+      }}
+    />
+  ))}
+</div>
+
       </section>
 
       {/* SECTION 5: Phone Type Section - phoneType (Image in Middle, Text Below 20px) */}
@@ -394,7 +402,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
               <img
                 src={product.phoneType.typeImage}
                 alt={product.phoneType.heading}
-                className="w-full h-full object-cover"
+                className="w-full h-[150px] lg:h-[400px] object-cover"
               />
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[#8FC240]">{product.phoneType.heading}</h2>
@@ -405,58 +413,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
         </div>
       </section>
 
-      {/* SECTION 6: Second Carousel - carouselImages2 */}
-      <section ref={carousel2Ref} className="py-16 md:py-24">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#8FC240]">See It in Action</h2>
-          
-          {/* Desktop Grid */}
-          <div className="hidden md:grid md:grid-cols-4 gap-4">
-            {product.carouselImages2.map((img: string, index: number) => (
-              <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
-                <img
-                  src={img}
-                  alt={`${product.name} detail ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Mobile Carousel */}
-          <div className="md:hidden relative">
-            <div className="relative aspect-square overflow-hidden rounded-lg">
-              <img
-                src={product.carouselImages2[currentCarousel2]}
-                alt={`${product.name} detail`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <button
-              onClick={prevSlide2}
-              className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full transition-colors" style={{ backgroundColor: '#8FC240' }}>
-              <ChevronLeft className="w-6 h-6 text-white" />
-            </button>
-            <button
-              onClick={nextSlide2}
-              className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full transition-colors" style={{ backgroundColor: '#8FC240' }}>
-              <ChevronRight className="w-6 h-6 text-white" />
-            </button>
-            <div className="flex justify-center gap-2 mt-4">
-              {product.carouselImages2.map((_: any, index: number) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentCarousel2(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentCarousel2 ? 'w-8' : ''
-                  }`}
-                  style={{ backgroundColor: '#8FC240' }}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* SECTION 7: Feature Image - featureImage (Image with Text on Right and Bottom) */}
       <section ref={featureRef} className="py-16 md:py-24">
