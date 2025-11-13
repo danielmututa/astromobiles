@@ -219,24 +219,24 @@ export const productsDatabase = {
       img: "/logo3.png",
       price: "180",
       title: "From $20us + usage top ups",
-      bannerImage: "/note15-banneroo1.webp",
+      bannerImage: "/1_01.webp",
       
       carouselImages: [
 
-         
+        
 
-        "/16one.webp ",
-        "/16carosel2.webp",
-        "/16carosel1.webp",
-        "/16carosel.webp"
+        "/astro-prime003.webp",
+        "/astro-prime01.webp",
+        "/a-pime.webp",
+        "/astro-prime04.webp"
       ],
       
       carouselImagestwo: [
 
       
 
-        "/2_06.jpg",
-        "/2_04.jpg",
+        "/caroselone.jpg",
+        "/4-002.jpg",
         "/2_03.webp",
         "/1_3_05.jpg"
       ],
@@ -244,7 +244,7 @@ export const productsDatabase = {
       phoneType: {
         heading: "Accessible Innovation",
         description: "At just $180 or $12/month with PAYU, the Astro Prime brings smartphone technology to everyone.",
-        typeImage: "/2_01.jpg"
+        typeImage: "/prime-inside.jpg"
       },
       
       carouselImages2: [
@@ -255,7 +255,7 @@ export const productsDatabase = {
       ],
       
       featureImage: {
-        image: "/astro note 16 pro.png",
+        image: "/two-one.png",
         textRight: "Quality features at an unbeatable price - perfect for first-time smartphone users.",
         textBottom: "Your gateway to the digital economy"
       },
@@ -310,7 +310,7 @@ export const productsDatabase = {
           explanation: "Access online learning platforms, educational apps, and digital textbooks with ease."
         },
         {
-          image: "/3PSB_06.jpg",
+          image: "/a-pime.jpg",
           title: "Room to Grow",
           explanation: "Expandable storage means you can download all your favorite content for offline access."
         }
