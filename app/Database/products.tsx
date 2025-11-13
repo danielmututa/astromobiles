@@ -10,13 +10,18 @@ export const productsDatabase = {
       img: "/pnote 15 pro -0bg.png",
       price: "160",
       title: "From $20us + usage top ups",
-      bannerImage: "/note13Pro-collection-banner.webp",
+      bannerImage: "/5-001banner.webp",
       
       carouselImages: [
+
+
+
+
+
         "/Note5 13Pro.webp",
-        "/Note2 13Pro.webp",
-        "/Note3 13Pro.webp",
-        "/Note1 13Pro.webp"
+        "note15-product-7-496369.webp ",
+        "/note15-product-3-544296.webp",
+        "/15proo0004.webp"
       ],
       
       carouselImagestwo: [
@@ -100,6 +105,17 @@ export const productsDatabase = {
     },
     
     {
+
+
+
+
+
+
+// public/4-03.webp 
+// public/4-04.webp
+//  public/4-05.webp
+
+
       id: "astro-nova",
       name: "Astro Nova",
       tagline: "From $20us + usage top ups",
@@ -107,26 +123,26 @@ export const productsDatabase = {
       img: "/logo3.png",
       price: "250",
       title: "From $20us + usage top ups",
-      bannerImage: "/banner15pro.webp",
+      bannerImage: "/note13Pro-collection-banner.webp",
       
       carouselImages: [
-        "/Note15_newest.png",
-        "/Note15Pro_Newest.jpg.png",
-        "/note 15 pr09.webp",
-        "/Note2 15pro.webp"
+        "/4-02.webp ",
+        "/4-03.webp ",
+        "/4-04.webp",
+        "/4-05.webp"
       ],
       
-      carouselImagestwo: [
-        "/note15pro.webp",
-        "/note 15 pro.webp",
-        "/carosel1.webp",
-        "/carosel2.webp"
+      carouselImagestwo: [   
+        "/4-003.jpg",
+        "/4-002.jpg",
+        "/4-001.jpg",
+        "/-004.jpg"
       ],
       
       phoneType: {
         heading: "Unstoppable Battery Life",
         description: "The Astro Nova lives up to its name with a massive 6000mAh battery that lasts 2-3 days on a single charge.",
-        typeImage: "/note15pro.webp"
+        typeImage: "/40-0.jpg"
       },
       
       carouselImages2: [
@@ -137,7 +153,7 @@ export const productsDatabase = {
       ],
       
       featureImage: {
-        image: "/note15pro.webp",
+        image: "/note13-b-4.jpg",
         textRight: "Never worry about charging with our revolutionary 6000mAh battery.",
         textBottom: "Perfect for entrepreneurs and busy professionals"
       },
@@ -179,17 +195,17 @@ export const productsDatabase = {
       
       imageExplanations: [
         {
-          image: "/note15pro.webp",
+          image: "/note13-c-1.webp",
           title: "All-Day Power",
           explanation: "Get up to 3 days of use on a single charge - perfect for areas with unreliable power supply."
         },
         {
-          image: "/carosel1.webp",
+          image: "/note13-a-13.webp",
           title: "Rapid Charging",
           explanation: "Get a full day's power in just 30 minutes with our fast charging technology."
         },
         {
-          image: "/carosel2.webp",
+          image: "/note13-a-10.webp",
           title: "Dual SIM Flexibility",
           explanation: "Separate business and personal lines while carrying just one device."
         }
