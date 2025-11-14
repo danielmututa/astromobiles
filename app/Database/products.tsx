@@ -325,10 +325,18 @@ export const productsDatabase = {
       tagline: "Professional tablet for work and play",
       image: "/tablets/tab-pro.jpg",
       price: "399",
-      bannerImage: "/banners/tab-pro-banner.jpg",
+      bannerImage: "/Pad11-banner-web.webp",
       
       carouselImages: [
-        "/tablets/tab-pro-1.jpg",
+
+
+// public/Pad11-product-6-458438.webp 
+
+// public/Pad11-product-2-187318.webp 
+// public/Pad11-product-4-170360.webp
+
+
+        "/Pad11-product-5-127683.webp",
         "/tablets/tab-pro-2.jpg",
         "/tablets/tab-pro-3.jpg",
         "/tablets/tab-pro-4.jpg"
