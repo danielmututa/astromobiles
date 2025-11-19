@@ -430,26 +430,26 @@ export const productsDatabase = {
       tagline: "Affordable tablet for everyday use",
       image: "/tablets/tab-lite.jpg",
       price: "199",
-      bannerImage: "/banners/tab-lite-banner.jpg",
+      bannerImage: "/landining page 08.webp",
       
       carouselImages: [
-        "/tablets/tab-lite-1.jpg",
-        "/tablets/tab-lite-2.jpg",
-        "/tablets/tab-lite-3.jpg",
-        "/tablets/tab-lite-4.jpg"
+        "/Pad8-001.webp",
+        "/Pad8-002.webp",
+        "/Pad8-003.webp",
+        "/Pad8-004.webp"
       ],
       
       carouselImagestwo: [
-        "/tablets/tab-lite-showcase-1.jpg",
-        "/tablets/tab-lite-showcase-2.jpg",
-        "/tablets/tab-lite-showcase-3.jpg",
-        "/tablets/tab-lite-showcase-4.jpg"
+        "/ipad8 carosel.jpg",
+        "/ipad8 carousel9.jpg",
+        "/ipad8 carosel12.jpg.jpg",
+        "/ipad8 pro005.jpg"
       ],
       
       phoneType: {
         heading: "Essential Tablet Experience",
         description: "10-inch display perfect for reading, browsing, and streaming",
-        typeImage: "/tablets/tab-lite-feature.jpg"
+        typeImage: "/ipad8 ViewPad8.jpg"
       },
       
       carouselImages2: [
@@ -460,7 +460,7 @@ export const productsDatabase = {
       ],
       
       featureImage: {
-        image: "/tablets/tab-lite-hero.jpg",
+        image: "/04_3c4606a1-17db-4c0e-b218-5741be439b1b.jpg",
         textRight: "Everything you need in a tablet at an unbeatable price.",
         textBottom: "Perfect for students and families"
       },
@@ -487,23 +487,30 @@ export const productsDatabase = {
               "720p video calls",
               "Portrait mode"
             ]
-          }
+          },
+          {
+            title: "5MP Front Camera",
+            details: [
+              "720p video calls",
+              "Portrait mode"
+            ]
+          },
         ]
       },
       
       imageExplanations: [
         {
-          image: "/tablets/tab-lite-learning.jpg",
+          image: "/05_94b3f70d-61fc-43f0-90fc-8b5cc2e9d409.jpg",
           title: "Perfect for Learning",
           explanation: "Access educational content and online classes with ease."
         },
         {
-          image: "/tablets/tab-lite-entertainment.jpg",
+          image: "/13_53ed0dbc-719a-43e7-b956-91bf042932e1.jpg",
           title: "Family Entertainment",
           explanation: "Stream your favorite shows and games with the whole family."
         },
         {
-          image: "/tablets/tab-lite-portable.jpg",
+          image: "/07_29d6e5af-98cd-4cc6-9a06-b8bc0bc1d06e.jpg",
           title: "Ultra Portable",
           explanation: "Lightweight design makes it easy to take anywhere."
         }
