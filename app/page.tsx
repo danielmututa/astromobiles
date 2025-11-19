@@ -459,14 +459,9 @@ export default function HomePage() {
 
 
 
-// /note15-banneroo1.webp
+      // /note15-banneroo1.webp
 
-  
-
-
-
-
-              // {image:"astro note 13 max.png", name: "Astro Vibe", tag: "Bugdet Range", title: "From $20us + usage top ups"},
+             // {image:"astro note 13 max.png", name: "Astro Vibe", tag: "Bugdet Range", title: "From $20us + usage top ups"},
               {image:"astro note 15.png", name: "Astro Vibe", tag: "Bugdet Range", title: "From $20us + usage top ups"},
               {image:"astro note 15 pro.png", name: "Astro Nova", tag: "Middle Range", title: "From $30us + usage top ups"},
               {image:"astro note 13 max.png", name: "Astro Prime", tag: "Top Range", title: "From $10us + usage top ups"},
