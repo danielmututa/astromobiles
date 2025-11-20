@@ -133,8 +133,8 @@ export const productsDatabase = {
       carouselImagestwo: [   
         "/note15-pic1-1.webp",
         "/note15-color1.webp",
-        "/note15-color2.webp",
-        "/note15-color3.webp"
+        "/Astro Mobile-Banners_2.-.jpg",
+        "/Astro Mobile-Banners_1.-.jpg"
       ],
       
       phoneType: {
