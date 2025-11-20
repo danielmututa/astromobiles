@@ -319,11 +319,11 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
             {/* Desktop Grid View */}
             <div className="hidden md:grid md:grid-cols-4 gap-4">
               {product.carouselImages.map((img: string, index: number) => (
-                <div key={index} className="carousel-image relative aspect-square overflow-hidden rounded-lg">
+                <div key={index} className="carousel-image  relative aspect-square overflow-hidden rounded-lg">
                   <img
                     src={img}
                     alt={`${product.name} view ${index + 1}`}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    className="w-full h-[300px] object-contain hover:scale-110 transition-transform duration-300"
                   />
                 </div>
               ))}

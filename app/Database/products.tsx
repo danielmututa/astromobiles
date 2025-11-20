@@ -325,7 +325,7 @@ export const productsDatabase = {
       tagline: "Professional tablet for work and play",
       image: "/tablets/tab-pro.jpg",
       price: "399",
-      bannerImage: "/Pad11-banner-web.webp",
+      bannerImage: "/3.png",
       
       
       carouselImages: [
@@ -337,7 +337,7 @@ export const productsDatabase = {
 // public/Pad11-product-4-170360.webp
 // Pad11-product-2-187318.webp
 
-        "/Pad11-product-5-127683.webp",
+        "/2.png",
         "/Pad11-product-2-187318.webp",
         "/TABLETS_PAD_11.jpg ",
         "/Pad11-product-6-458438.webp"
@@ -433,10 +433,10 @@ export const productsDatabase = {
       bannerImage: "/landining page 08.webp",
       
       carouselImages: [
-        "/Pad8-001.webp",
-        "/Pad8-002.webp",
-        "/Pad8-003.webp",
-        "/Pad8-004.webp"
+        "/1.png",
+        "/6.png",
+        "/5.png",
+        "/4.png"
       ],
       
       carouselImagestwo: [

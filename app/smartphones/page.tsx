@@ -24,8 +24,9 @@ export default function SmartphonesPage() {
 
 
     {
+      // id: "",
       id: "astro-nova",
-      name: "Astro Vibe",
+      name: "Astro Nova",
       tagline: "From $20us + usage top ups",
       image: "/astro note 15.png",
       img:"/pnote 15 pro -0bg.png",
@@ -43,7 +44,7 @@ export default function SmartphonesPage() {
     },
     {
       id: "astro-vibe",
-      name: "Astro Nova",
+      name: "Astro Vibe",
       
       tagline: "From $20us + usage top ups",
       image: "/astro note 15 pro.png",
