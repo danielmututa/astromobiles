@@ -227,8 +227,8 @@ export const productsDatabase = {
 
         "/astro-prime003.webp",
         "/astro-prime01.webp",
-        "/a-pime.webp",
-        "/astro-prime04.webp"
+      "/13.png",
+        "/12.png"
       ],
       
       carouselImagestwo: [
