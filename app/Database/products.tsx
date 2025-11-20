@@ -16,14 +16,14 @@ export const productsDatabase = {
 
         "/Note5 13Pro.webp",
         "/Note2 15pro.webp",
-        "/note15-product-3-544296.webp",
+        "/8.png",
         "/15proo0004.webp"
       ],
       carouselImagestwo: [
         "/Astro Mobile_3.png",
         "/Astro Mobile_1.png",
-        "/carosel3.webp",
-        "/carosel2.webp"
+        "/10.png",
+        "/11.png"
       ],
       
       phoneType: {
