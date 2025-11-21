@@ -3,8 +3,12 @@
 export const productsDatabase = {
   smartphones: [
     {
-      id: "astro-vibe",
-      name: "Astro Vibe",
+
+      id: "astro-nova",
+      name: "Astro Nova", 
+
+      // id: "astro-vibe",
+      // name: "Astro Vibe",
       tagline: "From $20us + usage top ups",
       image: "/Note13Max_Newest.png",
       img: "/pnote 15 pro -0bg.png",
@@ -111,8 +115,13 @@ export const productsDatabase = {
 //  public/4-05.webp
 
 
-      id: "astro-nova",
-      name: "Astro Nova",
+      // id: "astro-nova",
+      // name: "Astro Nova",
+
+
+      id: "astro-vibe",
+      name: "Astro Vibe",
+
       tagline: "From $20us + usage top ups",
       image: "/Note15_newest.png",
       img: "/logo3.png",
@@ -121,7 +130,7 @@ export const productsDatabase = {
       bannerImage: "/Astro Mobile.png",
       
       carouselImages: [
-       "/astro-vibe1.webp ",
+        "/astro-vibe1.webp ",
         "/astro-vibe2.webp",
         "/astro-vibe3.webp",
         "/Astro Mobile_2.png"
@@ -131,9 +140,9 @@ export const productsDatabase = {
 
 
       carouselImagestwo: [   
+        "/Astro Mobile-Banners_2.-.jpg",
         "/note15-pic1-1.webp",
         "/note15-color1.webp",
-        "/Astro Mobile-Banners_2.-.jpg",
         "/Astro Mobile-Banners_1.-.jpg"
       ],
       

@@ -24,14 +24,20 @@ export default function SmartphonesPage() {
 
 
     {
-      // id: "",
-      id: "astro-nova",
-      name: "Astro Nova",
+      
+
+
+
+
+       id: "astro-vibe",
+      name: "Astro Vibe",
+
+     
       tagline: "From $20us + usage top ups",
       image: "/astro note 15.png",
       img:"/pnote 15 pro -0bg.png",
       price:"160",
-      title:"From $20us + usage top ups",
+      title:"From $10us + usage top ups",
       specs: {
         display: '6.7" AMOLED',
         ram: "8GB RAM",
@@ -43,8 +49,9 @@ export default function SmartphonesPage() {
       },
     },
     {
-      id: "astro-vibe",
-      name: "Astro Vibe",
+      
+       id: "astro-nova",
+      name: "Astro Nova",
       
       tagline: "From $20us + usage top ups",
       image: "/astro note 15 pro.png",
@@ -65,7 +72,7 @@ export default function SmartphonesPage() {
     {
       id: "astro-prime",
       name: "Astro Prime",
-      tagline: "From $20us + usage top ups",
+      tagline: "From $30us + usage top ups",
       payuPrice: "$12/month",
       image: "/astro note 13 max.png",
       title:"From $20us + usage top ups",

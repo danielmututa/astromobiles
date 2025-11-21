@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-4">
              <Link href="/" className="flex items-center gap-2" >
             <img
-              src="astro.png"
+              src="/astro.png"
               alt="AstroMobile logo"
               className="h-[40px] object-cover  hover:scale-110 transition-transform duration-300"
             />
