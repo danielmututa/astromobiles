@@ -126,7 +126,7 @@ export const productsDatabase = {
       image: "/Note15_newest.png",
       img: "/logo3.png",
       price: "250",
-      title: "From $20us + usage top ups",
+      title: "From $10us + usage top ups",
       bannerImage: "/Astro Mobile.png",
       
       carouselImages: [

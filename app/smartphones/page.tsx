@@ -33,7 +33,7 @@ export default function SmartphonesPage() {
       name: "Astro Vibe",
 
      
-      tagline: "From $20us + usage top ups",
+      tagline: "From $10us + usage top ups",
       image: "/astro note 15.png",
       img:"/pnote 15 pro -0bg.png",
       price:"160",
@@ -75,7 +75,7 @@ export default function SmartphonesPage() {
       tagline: "From $30us + usage top ups",
       payuPrice: "$12/month",
       image: "/astro note 13 max.png",
-      title:"From $20us + usage top ups",
+      title:"From $30us + usage top ups",
      img:"/logo3.png",
       price:"180",
       specs: {

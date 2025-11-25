@@ -40,14 +40,14 @@ export default function HomePage() {
       title: "Productivity Unleashed",
       subtitle: "Tablets for Work & Play",
       description: "Perfect for education, entertainment, and professional work. Large screens, powerful performance.",
-      image: "/twoastromobile.jpg",
+      image: "/ChatGPT Image Nov 25, 2025, 12_37_46 PM.png",
     },
     {
       type: "Smartwatch",
       title: "Stay Connected, Stay Healthy",
       subtitle: "Smartwatches for Modern Life",
       description: "Track your fitness, receive notifications, and stay connected without reaching for your phone.",
-      image: "/threeastromobile.jpg",
+      image: "/ChatGPT Image Nov 25, 2025, 01_15_29 PM.png",
     },
   ]
 

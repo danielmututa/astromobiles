@@ -142,7 +142,7 @@ export function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            © 2025 AstroMobile. All rights reserved.
+            © 2025 AstroMobile a company of Algebra Technologies. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-sm text-muted-foreground hover:text-[#8FC240] transition-colors">
