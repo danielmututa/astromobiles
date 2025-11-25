@@ -18,8 +18,7 @@ export default function ProductsPage() {
     { name: 'Angola', flag: '🇦🇴', code: 'AO' },
     { name: 'Botswana', flag: '🇧🇼', code: 'BW' },
     { name: 'DRC Congo', flag: '🇨🇩', code: 'CD' },
-    { name: 'Eswatini', flag: '🇸🇿', code: 'SZ' },
-    { name: 'Lesotho', flag: '🇱🇸', code: 'LS' },
+    { name: 'Eswatini', flag: '🇸z', code: 'SZ' },
     { name: 'Malawi', flag: '🇲🇼', code: 'MW' },
     { name: 'Mozambique', flag: '🇲🇿', code: 'MZ' },
     { name: 'Namibia', flag: '🇳🇦', code: 'NA' },
@@ -27,6 +26,9 @@ export default function ProductsPage() {
     { name: 'Tanzania', flag: '🇹🇿', code: 'TZ' },
     { name: 'Zambia', flag: '🇿🇲', code: 'ZM' },
     { name: 'Zimbabwe', flag: '🇿🇼', code: 'ZW' },
+    { name: 'Rwanda', flag: '🇷🇼', code: 'RW' },
+    { name: 'Ethiopia', flag: '🇪🇹', code: 'ET' },
+    { name: 'Uganda', flag: '🇺🇬', code: 'UG' },
 ];
 
 
