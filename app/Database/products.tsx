@@ -66,7 +66,7 @@ export const productsDatabase = {
             ]
           },
           {
-            title: "Battery",
+            title: "Battery Capacity",
             details: [
               "Massive 5160mAh capacity",
               " Power through your entire day",
