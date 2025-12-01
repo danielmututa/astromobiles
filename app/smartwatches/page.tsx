@@ -23,8 +23,8 @@ export default function SmartwatchesPage() {
 
   const smartwatches = [
     {
-      id: "astro-watch-pro",
-      name: "Astro Watch Pro",
+      id: "pulse-spirit",
+      name: "Pulse Spirit",
       tagline: "Premium Health Tracking",
       image: "/PULSE_SINGLE_1.jpg",
           img:"/logo3.png",
@@ -47,8 +47,8 @@ export default function SmartwatchesPage() {
       },
     },
     {
-      id: "astro-watch-fit",
-      name: "Astro Watch Fit",
+      id: "pusle-force",
+      name: "Pusle Force",
       tagline: "Fitness Focused",
       image: "/PULSE_SINGLE_2.jpg",
    img:"/logo3.png",
@@ -63,8 +63,8 @@ export default function SmartwatchesPage() {
       },
     },
     {
-      id: "astro-watch-lite",
-      name: "Astro Watch Lite",
+      id: "pulse-force-plus",
+      name: "Pulse Force Plus",
       tagline: "Essential Smartwatch",
       image: "/PULSE_SINGLE_4.jpg",
      img:"/logo3.png",

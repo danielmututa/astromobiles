@@ -750,139 +750,389 @@ export const productsDatabase = {
     }
   ],
   
-  watches: [
+ watches: [
     {
-      id: "astro-watch-pro",
-      name: "Astro Watch Pro",
-      tagline: "Premium smartwatch for fitness and lifestyle",
-      image: "/watches/watch-pro.jpg",
-      price: "299",
-      bannerImage: "/banners/watch-pro-banner.jpg",
+      id: "pulse-spirit",
+      name: "Pulse Spirit",
+      tagline: "Premium Health Tracking",
+      image: "/PULSE_SINGLE_1.jpg",
+      img: "/logo3.png",
+      price: "80",
+      bannerImage: "/BANNER_1.png", // Add banner image
       
       carouselImages: [
-        "/watches/watch-pro-1.jpg",
-        "/watches/watch-pro-2.jpg",
-        "/watches/watch-pro-3.jpg",
-        "/watches/watch-pro-4.jpg"
+        "/6-800x800-removebg-preview.png",
+        "/31f76e4ec3d6e637e3737d3b43459d95037b18f6_original-removebg-preview.png",
+        "/81cfe9d55b48069af504cd3d1cfbe941-removebg-preview.png",
+        "/3-800x800-removebg-preview.png"
       ],
       
       carouselImagestwo: [
-        "/watches/watch-pro-showcase-1.jpg",
-        "/watches/watch-pro-showcase-2.jpg",
-        "/watches/watch-pro-showcase-3.jpg",
-        "/watches/watch-pro-showcase-4.jpg"
+        "/Realme_band_hero-removebg-preview.png",
+        "/1-removebg-preview (2).png",
+        "/81cfe9d55b48069af504cd3d1cfbe941-removebg-preview.png",
+        "/PULSE_SINGLE_1.jpg"
       ],
       
       phoneType: {
         heading: "Premium Fitness Companion",
-        description: "Advanced health tracking with GPS and heart rate monitoring",
-        typeImage: "/watches/watch-pro-feature.jpg"
+        description: "Advanced health tracking with AMOLED display, GPS, and comprehensive fitness monitoring for the active lifestyle.",
+        typeImage: "/inbody2.jpg"
       },
       
       carouselImages2: [
-        "/watches/watch-pro-detail-1.jpg",
-        "/watches/watch-pro-detail-2.jpg",
-        "/watches/watch-pro-detail-3.jpg",
-        "/watches/watch-pro-detail-4.jpg"
+        "/PULSE_SINGLE_1.jpg",
+        "/PULSE_SINGLE_2.jpg",
+        "/PULSE_SINGLE_4.jpg",
+        "/PULSE_SINGLE_1.jpg"
       ],
       
       featureImage: {
-        image: "/watches/watch-pro-hero.jpg",
-        textRight: "Track your fitness goals with precision and style.",
+        image: "/PULSE_SINGLE_1.jpg",
+        textRight: "Track your fitness goals with precision. 100+ sport modes and comprehensive health monitoring.",
         textBottom: "Your health, on your wrist"
       },
       
       specs: {
-        display: '1.4" AMOLED',
-        battery: "7 days battery life",
-        waterproof: "5ATM water resistant",
-        features: ["GPS", "Heart Rate Monitor", "Sleep Tracking", "100+ Sport Modes"],
-        camera: []
+        display: '1.4" AMOLED Always-On',
+        battery: "7 Days Battery Life",
+        waterproof: "5ATM Water Resistant",
+        sensors: "Heart Rate, SpO2, Sleep, Stress",
+        connectivity: "Bluetooth 5.0, GPS",
+        features: [
+          "100+ Sport Modes",
+          "Music Control",
+          "Call Notifications",
+          "Weather Updates",
+          "Find My Phone",
+          "Customizable Watch Faces"
+        ],
+        camera: [
+          {
+            title: "Display & Battery",
+            details: [
+              "1.4-inch AMOLED Always-On Display",
+              "7 days battery life",
+              "Fast charging support"
+            ]
+          },
+          {
+            title: "Health Tracking",
+            details: [
+              "Heart Rate monitoring 24/7",
+              "Blood Oxygen (SpO2) tracking",
+              "Sleep quality analysis",
+              "Stress level monitoring"
+            ]
+          },
+          {
+            title: "Fitness Features",
+            details: [
+              "100+ sport modes",
+              "GPS tracking",
+              "5ATM water resistance",
+              "Activity tracking"
+            ]
+          }
+        ],
+        technical: [
+          {
+            title: "Hardware Specifications",
+            details: [
+              "1.4-inch AMOLED touchscreen",
+              "Bluetooth 5.0 connectivity",
+              "Built-in GPS",
+              "5ATM water resistance"
+            ]
+          },
+          {
+            title: "Sensors",
+            details: [
+              "Heart rate sensor",
+              "SpO2 sensor",
+              "Accelerometer",
+              "Gyroscope"
+            ]
+          },
+          {
+            title: "Software Features",
+            details: [
+              "Music control",
+              "Call notifications",
+              "Weather updates",
+              "Find my phone"
+            ]
+          }
+        ]
       },
       
       imageExplanations: [
         {
-          image: "/watches/watch-pro-fitness.jpg",
-          title: "Advanced Fitness Tracking",
-          explanation: "Monitor heart rate, calories, and 100+ different workout types."
+          image: "/Realme_band_hero-removebg-preview.png",
+          title: "Advanced Health Tracking",
+          explanation: "Monitor heart rate, blood oxygen, sleep quality, and stress levels 24/7 with precision sensors."
         },
         {
-          image: "/watches/watch-pro-health.jpg",
-          title: "Health Monitoring",
-          explanation: "Track sleep quality, stress levels, and blood oxygen."
+          image: "/Realme_Band_Farben-removebg-preview.png",
+          title: "100+ Sport Modes",
+          explanation: "Track every workout with dedicated modes for running, cycling, swimming, and 100+ other activities."
         },
         {
-          image: "/watches/watch-pro-connected.jpg",
-          title: "Stay Connected",
-          explanation: "Receive notifications, calls, and messages on your wrist."
+          image: "/6-800x800-removebg-preview.png",
+          title: "7-Day Battery Life",
+          explanation: "Stay powered for an entire week on a single charge with efficient battery management."
         }
       ]
     },
     
     {
-      id: "astro-watch-fit",
-      name: "Astro Watch Fit",
-      tagline: "Affordable fitness tracker",
-      image: "/watches/watch-fit.jpg",
-      price: "99",
-      bannerImage: "/banners/watch-fit-banner.jpg",
+      id: "pusle-force",
+      name: "Pulse Force",
+      tagline: "Fitness Focused",
+      image: "/PULSE_SINGLE_2.jpg",
+      img: "/logo3.png",
+      price: "60",
+      bannerImage: "/PULSE_SINGLE_2.jpg",
       
       carouselImages: [
-        "/watches/watch-fit-1.jpg",
-        "/watches/watch-fit-2.jpg",
-        "/watches/watch-fit-3.jpg",
-        "/watches/watch-fit-4.jpg"
+        "/PULSE_SINGLE_2.jpg",
+        "/PULSE_SINGLE_1.jpg",
+        "/PULSE_SINGLE_4.jpg",
+        "/PULSE_SINGLE_2.jpg"
       ],
       
       carouselImagestwo: [
-        "/watches/watch-fit-showcase-1.jpg",
-        "/watches/watch-fit-showcase-2.jpg",
-        "/watches/watch-fit-showcase-3.jpg",
-        "/watches/watch-fit-showcase-4.jpg"
+        "/PULSE_SINGLE_2.jpg",
+        "/PULSE_SINGLE_1.jpg",
+        "/PULSE_SINGLE_4.jpg",
+        "/PULSE_SINGLE_2.jpg"
       ],
       
       phoneType: {
         heading: "Essential Fitness Tracking",
-        description: "All the basics you need to stay active and healthy",
-        typeImage: "/watches/watch-fit-feature.jpg"
+        description: "Perfect balance of features and battery life. 10 days of power with comprehensive fitness tracking.",
+        typeImage: "/PULSE_SINGLE_2.jpg"
       },
       
       carouselImages2: [
-        "/watches/watch-fit-detail-1.jpg",
-        "/watches/watch-fit-detail-2.jpg",
-        "/watches/watch-fit-detail-3.jpg",
-        "/watches/watch-fit-detail-4.jpg"
+        "/PULSE_SINGLE_2.jpg",
+        "/PULSE_SINGLE_1.jpg",
+        "/PULSE_SINGLE_4.jpg",
+        "/PULSE_SINGLE_2.jpg"
       ],
       
       featureImage: {
-        image: "/watches/watch-fit-hero.jpg",
-        textRight: "Start your fitness journey without breaking the bank.",
-        textBottom: "Fitness made accessible"
+        image: "/PULSE_SINGLE_2.jpg",
+        textRight: "All the fitness features you need with exceptional battery life. Perfect for everyday tracking.",
+        textBottom: "Fitness made simple"
       },
       
       specs: {
-        display: '1.1" LCD',
-        battery: "14 days battery life",
-        waterproof: "3ATM water resistant",
-        features: ["Heart Rate Monitor", "Sleep Tracking", "50+ Sport Modes", "Step Counter"],
-        camera: []
+        display: '1.3" TFT LCD',
+        battery: "10 Days Battery Life",
+        waterproof: "IP68 Water Resistant",
+        sensors: "Heart Rate, Steps, Calories",
+        connectivity: "Bluetooth 5.0",
+        features: ["50+ Sport Modes", "Sleep Tracking", "Call Notifications", "Long Battery Life"],
+        camera: [
+          {
+            title: "Display & Battery",
+            details: [
+              "1.3-inch TFT LCD display",
+              "10 days battery life",
+              "Energy-efficient design"
+            ]
+          },
+          {
+            title: "Fitness Tracking",
+            details: [
+              "Heart rate monitoring",
+              "Step counter",
+              "Calorie tracking",
+              "50+ sport modes"
+            ]
+          },
+          {
+            title: "Smart Features",
+            details: [
+              "IP68 water resistance",
+              "Sleep tracking",
+              "Call notifications",
+              "Bluetooth 5.0"
+            ]
+          }
+        ],
+        technical: [
+          {
+            title: "Hardware Specifications",
+            details: [
+              "1.3-inch TFT LCD",
+              "Bluetooth 5.0",
+              "IP68 water resistant",
+              "10-day battery life"
+            ]
+          },
+          {
+            title: "Sensors",
+            details: [
+              "Heart rate sensor",
+              "Accelerometer",
+              "Step counter"
+            ]
+          },
+          {
+            title: "Software Features",
+            details: [
+              "50+ sport modes",
+              "Sleep analysis",
+              "Call notifications",
+              "Activity reminders"
+            ]
+          }
+        ]
       },
       
       imageExplanations: [
         {
-          image: "/watches/watch-fit-activity.jpg",
-          title: "Track Daily Activity",
-          explanation: "Monitor steps, distance, and calories burned throughout the day."
+          image: "/PULSE_SINGLE_2.jpg",
+          title: "10-Day Battery",
+          explanation: "Extended battery life means less time charging and more time tracking your fitness goals."
         },
         {
-          image: "/watches/watch-fit-sleep.jpg",
-          title: "Sleep Analysis",
-          explanation: "Understand your sleep patterns and improve your rest."
+          image: "/PULSE_SINGLE_1.jpg",
+          title: "50+ Sport Modes",
+          explanation: "From running to yoga, track all your favorite activities with dedicated sport modes."
         },
         {
-          image: "/watches/watch-fit-battery.jpg",
-          title: "Long Battery Life",
-          explanation: "Up to 14 days on a single charge means less time charging."
+          image: "/PULSE_SINGLE_4.jpg",
+          title: "IP68 Water Resistant",
+          explanation: "Wear it in the rain, while washing hands, or during workouts without worry."
+        }
+      ]
+    },
+    
+    {
+      id: "pulse-force-plus",
+      name: "Pulse Force Plus",
+      tagline: "Essential Smartwatch",
+      image: "/PULSE_SINGLE_4.jpg",
+      img: "/logo3.png",
+      price: "90",
+      bannerImage: "/PULSE_SINGLE_4.jpg",
+      
+      carouselImages: [
+        "/PULSE_SINGLE_4.jpg",
+        "/watch01.jpg",
+        "/h37bly-removebg-preview.png",
+        "/Copy-of-Copy-of-Untitled-Design61-removebg-preview.png"
+      ],
+      
+      carouselImagestwo: [
+        "/fitness-tracker-sport-bracelet-smartwatch-technology.jpg",
+        "/61vge4+-08L-removebg-preview.png",
+        "/woman-using-holography-from-smartwatch-wearable-technology.jpg",
+        "/PULSE_SINGLE_2.jpg",
+      ],
+      
+      phoneType: {
+        heading: "Ultra Long Battery Life",
+        description: "Industry-leading 14-day battery life with essential fitness tracking. Perfect for those who want simplicity.",
+        typeImage: "/woman-using-holography-from-smartwatch-wearable-technology.jpg"
+      },
+      
+      carouselImages2: [
+        "/PULSE_SINGLE_4.jpg",
+        "/PULSE_SINGLE_1.jpg",
+        "/PULSE_SINGLE_2.jpg",
+        "/PULSE_SINGLE_4.jpg"
+      ],
+      
+      featureImage: {
+        image: "/51X1-3Qq+nL-removebg-preview.png",
+        textRight: "Essential features with unbeatable battery life. The perfect entry into smartwatch fitness tracking.",
+        textBottom: "Affordable fitness tracking"
+      },
+      
+      specs: {
+        display: '1.2" TFT LCD',
+        battery: "14 Days Battery Life",
+        waterproof: "IP67 Water Resistant",
+        sensors: "Heart Rate, Steps",
+        connectivity: "Bluetooth 4.2",
+        features: ["Basic Fitness Tracking", "Notifications", "Ultra Long Battery", "Affordable"],
+        camera: [
+          {
+            title: "Display & Battery",
+            details: [
+              "1.2-inch TFT LCD display",
+              "14 days battery life",
+              "Ultra-efficient power management"
+            ]
+          },
+          {
+            title: "Essential Tracking",
+            details: [
+              "Heart rate monitoring",
+              "Step counting",
+              "Basic fitness metrics",
+              "Sleep tracking"
+            ]
+          },
+          {
+            title: "Smart Features",
+            details: [
+              "IP67 water resistant",
+              "Notifications",
+              "Bluetooth 4.2",
+              "Affordable price"
+            ]
+          }
+        ],
+        technical: [
+          {
+            title: "Hardware Specifications",
+            details: [
+              "1.2-inch TFT LCD",
+              "Bluetooth 4.2",
+              "IP67 water resistant",
+              "14-day battery life"
+            ]
+          },
+          {
+            title: "Sensors",
+            details: [
+              "Heart rate sensor",
+              "Step counter",
+              "Basic accelerometer"
+            ]
+          },
+          {
+            title: "Software Features",
+            details: [
+              "Essential fitness tracking",
+              "Call & message notifications",
+              "Simple interface",
+              "Easy to use"
+            ]
+          }
+        ]
+      },
+      
+      imageExplanations: [
+        {
+          image: "/PULSE_SINGLE_4.jpg",
+          title: "14-Day Battery",
+          explanation: "Forget about daily charging with our industry-leading 14-day battery life."
+        },
+        {
+          image: "/71+o+CaWZtL._AC_SL1500_-removebg-preview.png",
+          title: "Essential Fitness",
+          explanation: "Track your daily steps, heart rate, and basic fitness metrics without complexity."
+        },
+        {
+          image: "/61jv+km9QJL._AC_SL1001_-removebg-preview.png",
+          title: "Affordable Entry",
+          explanation: "Start your fitness journey with an affordable smartwatch that doesn't compromise on quality."
         }
       ]
     }
@@ -894,10 +1144,9 @@ export const getProductsByCategory = (category) => {
   return productsDatabase[category] || [];
 };
 
-// Helper function to get single product - handles both string and number IDs
+// Helper function to get single product
 export const getProductById = (category, id) => {
   const products = productsDatabase[category] || [];
-  // Convert id to string for comparison since all our IDs are strings
   const searchId = String(id);
   return products.find(product => String(product.id) === searchId);
 };

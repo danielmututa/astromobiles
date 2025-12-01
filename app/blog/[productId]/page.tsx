@@ -31,12 +31,19 @@ export default function ProductDetailPage({ params }: { params: Promise<{ produc
     product = getProductById('tablets', productId)
     productType = 'tablet'
   }
-  
-  // Fallback to default if nothing found
+
   if (!product) {
-    product = getProductById('smartphones', 'astro-vibe')
-    productType = 'smartphone'
-  }
+  product = getProductById('watches', productId)
+  productType = 'watch'
+}
+
+// Fallback to default if nothing found
+if (!product) {
+  product = getProductById('smartphones', 'astro-vibe')
+  productType = 'smartphone'
+}
+  
+  
 
   const heroRef = useRef(null)
   const highlightsRef = useRef(null)
